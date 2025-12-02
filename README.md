@@ -67,7 +67,7 @@ Bash
 
 ```
 # 克隆仓库
-git clone https://github.com/YOUR_USERNAME/FinSight-Engine.git
+git clone https://github.com/xiaobai1125/FinSight-Engine.git
 cd FinSight-Engine
 
 # 创建并激活虚拟环境 (可选)
@@ -150,3 +150,4 @@ python scripts/etl_processor.py
 - **Observability:** Loguru, Sentry
 
 - **Deployment:** Docker, Docker-Compose
+
