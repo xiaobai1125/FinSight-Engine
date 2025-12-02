@@ -1,0 +1,10 @@
+2025-12-02 09:47:41.640 | INFO     | app.services.rag_service:__init__:18 - DeepSeek 模型已连接
+2025-12-02 09:47:41.643 | INFO     | app.services.rag_service:search:23 - [RAG] 开始处理: 你是
+2025-12-02 09:47:51.441 | INFO     | app.services.rag_service:__init__:18 - DeepSeek 模型已连接
+2025-12-02 09:47:51.441 | INFO     | app.services.rag_service:search:23 - [RAG] 开始处理: 你是谁
+2025-12-02 09:47:59.906 | INFO     | app.services.rag_service:__init__:18 - DeepSeek 模型已连接
+2025-12-02 09:47:59.907 | INFO     | app.services.agent_service:run:31 - [Agent] 识别到计算意图: 1*2
+2025-12-02 09:48:45.905 | INFO     | app.services.rag_service:__init__:18 - DeepSeek 模型已连接
+2025-12-02 09:48:45.905 | INFO     | app.services.rag_service:search:23 - [RAG] 开始处理: 迟到扣多少钱？
+2025-12-02 09:50:47.984 | INFO     | app.services.rag_service:__init__:18 - DeepSeek 模型已连接
+2025-12-02 09:50:47.985 | INFO     | app.services.rag_service:search:23 - [RAG] 开始处理: 你是

@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # 1. 你的后端服务
+  api:
+    build: .
+    container_name: finsight-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./logs:/app/logs              # 把容器里的日志挂载出来，方便查看
+      - ./chroma_data:/app/chroma_data # 把向量数据库文件挂载出来，防止重启丢失
+    env_file:
+      - .env
+    depends_on:
+      - redis  # 告诉 Docker，先启动 Redis 再启动我
+    networks:
+      - finsight-net
+    restart: always
+
+  # 2. Redis 缓存服务 (简历亮点)
+  redis:
+    image: redis:7-alpine
+    container_name: finsight-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - finsight-net
+    restart: always
+
+networks:
+  finsight-net:
+    driver: bridge
