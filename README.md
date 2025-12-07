@@ -1,11 +1,11 @@
-# 📈 FinSight Engine - 企业智能知识库引擎 
+# 📈 Enterprise Insight - 企业智能知识库引擎 
 
 ![Python 3.10](https://img.shields.io/badge/Python-3.10-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688.svg)
 ![LangChain](https://img.shields.io/badge/LangChain-0.1-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-**FinSight Engine** 是一套面向企业内部垂直领域的智能问答解决方案。它基于 **RAG (检索增强生成)** 与 **Agent Lite (轻量级智能体)** 架构，解决了传统大模型在私有知识检索准确率低、数值计算易幻觉等痛点。
+**Enterprise Insight** 是一套面向企业内部垂直领域的智能问答解决方案。它基于 **RAG (检索增强生成)** 与 **Agent Lite (轻量级智能体)** 架构，解决了传统大模型在私有知识检索准确率低、数值计算易幻觉等痛点。
 
 本项目采用生产级工程规范构建，包含从 **多源异构数据清洗 (ETL)** 到 **高并发异步接口 (Async API)** 的全链路实现。
 
@@ -39,7 +39,7 @@
 text
 
 ```
-FinSight-Engine/
+Enterprise Insight/
 ├── app/
 │   ├── api/              # API 路由与依赖注入层
 │   ├── core/             # 核心配置 (Config / Logger)
@@ -49,8 +49,8 @@ FinSight-Engine/
 ├── logs/ 
 │   ├── finsight.log      # 记录日志
 ├── scripts/
-│   └── etl_processor.py  # 多线程 ETL 清洗脚本 (含 DLQ 演示)
-├── data/                 # 演示用测试文档 (PDF)
+│   └── etl_processor.py  # ETL 清洗脚本
+├── data/                 # 存放文档 
 ├── demo_ui.py            # Streamlit 演示前端
 ├──	Dockerfile			  # 镜像构建
 ├── docker-compose.yml    # 容器编排配置
@@ -67,7 +67,7 @@ Bash
 
 ```
 # 克隆仓库
-git clone https://github.com/xiaobai1125/FinSight-Engine.git
+git clone https://github.com/xiaobai1125/Enterprise-Insight.git
 cd FinSight-Engine
 
 # 创建并激活虚拟环境 (可选)
@@ -150,5 +150,6 @@ python scripts/etl_processor.py
 - **Observability:** Loguru, Sentry
 
 - **Deployment:** Docker, Docker-Compose
+
 
 
