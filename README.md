@@ -39,7 +39,7 @@
 text
 
 ```
-Enterprise Insight/
+Enterprise_Insight/
 ├── app/
 │   ├── api/              # API 路由与依赖注入层
 │   ├── core/             # 核心配置 (Config / Logger)
@@ -150,6 +150,7 @@ python scripts/etl_processor.py
 - **Observability:** Loguru, Sentry
 
 - **Deployment:** Docker, Docker-Compose
+
 
 
 
